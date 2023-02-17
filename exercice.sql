@@ -7,10 +7,11 @@ END;
 $$ LANGUAGE plpgsql;
 
 -- 2- Connectez-vous au serveur de base de données PostgreSQL en créant une nouvelle instance de la PDOclasse.
-$host = 'your_host';
-$dbname = 'your_database_name';
-$user = 'your_username';
-$password = 'your_password';
+$host = "localhost";
+$port = "5432";
+$dbname = "mydb";
+$user = "myuser";
+$password = "mypassword";
 $dsn = "pgsql:host=$host;dbname=$dbname;user=$user;password=$password";
 $pdo = new PDO($dsn);
 
